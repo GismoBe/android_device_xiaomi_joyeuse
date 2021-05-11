@@ -10,8 +10,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 $(call inherit-product, device/xiaomi/joyeuse/device.mk)
 
-# Inherit some common Lineage OS stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Cherish stuff
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+
+# Official
+CHERISH_BUILD_TYPE:= OFFICIAL
+
+# Gapps
+CHERISH_WITHGAPPS := true
+TARGET_GAPPS_ARCH := arm64
+
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.cherish.maintainer=GismoBe
 
 #Sign with private key
 PRODUCT_DEFAULT_DEV_CERTIFICATE := device/xiaomi/joyeuse/keys/releasekey
@@ -19,7 +32,7 @@ PRODUCT_DEFAULT_DEV_CERTIFICATE := device/xiaomi/joyeuse/keys/releasekey
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := joyeuse
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_joyeuse
+PRODUCT_NAME := cherish_joyeuse
 PRODUCT_MODEL := Redmi Note 9 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
