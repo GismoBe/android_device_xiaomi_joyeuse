@@ -8,7 +8,6 @@ persist.audio.fluence.voicecomm         u:object_r:vendor_audio_prop:s0
 # Bluetooth
 persist.vendor.bt.			u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.btstack.		        u:object_r:vendor_bluetooth_prop:s0
-persist.vendor.bluetooth.a2dp.		u:object_r:vendor_bluetooth_prop:s0
 
 # Camera
 cameradaemon.SaveMemAtBoot              u:object_r:vendor_camera_prop:s0
