@@ -45,6 +45,9 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     NoNotchBarOverlay
 
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
