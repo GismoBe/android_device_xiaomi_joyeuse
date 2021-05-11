@@ -48,6 +48,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# Prebuilt Packages
+PRODUCT_PACKAGES += \
+GalleryGo
+
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
